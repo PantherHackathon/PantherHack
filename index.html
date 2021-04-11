@@ -8,19 +8,177 @@
 
     <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
 
-    <style>        
-        canvas{
-            border: 2px solid #FB2;
+    <style> 
+        body {
+            background-color: rgb(218, 252, 249);
+            opacity: 0.90;
+        }
+
+        .Title{
+            top:0%;
+            width: 100%;
+            text-align: center;
+            color:  #FB2;
+            font-weight: bolder;
+            font-size: 60px;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            -webkit-text-stroke: 1px black;
+        }     
+
+        .canvas{
+
+            text-align: center;
             display: block;
             margin: 0 auto;
+            font-family: sans-serif
         }
+
+        .sub { 
+            position: absolute;
+            top:80%;
+            width: 90%;
+            text-align: left;
+            color: black;
+            font-size: 30px;
+            letter-spacing: 2px;
+            padding: 40px 40px;
+            font-family : monospace;
+        }
+
+        .ptext1 { 
+            position: absolute;
+            top:85%;
+            width: 90%;
+            text-align: left;
+            color: black;
+            font-size: 20px;
+            letter-spacing: 2px;
+            padding: 40px 40px;
+            font-family : monospace;
+        }
+        
     </style>
 </head>
 <body>
 
-    <canvas id="carGame" width="352" height="528"></canvas>
+    <div class="Title">
+         CORACE
+    </div>
+    <br>
 
-    <script src="game.js"></script>
+    <div class = "canvas">
+        <canvas id="carGame" width="352" height="528"></canvas>
 
+        <script src="game.js"></script>
+    </div>
+
+    <div class = "sub">
+        COVID GUIDELINES 
+    </div>
+
+    <div class="ptext1">
+        <hr>
+        <ul>
+        <li>
+            Wear a Mask 
+                <ul>
+                <li> 
+                    How to properly wear a face mask?
+                </li>
+                <ul> 
+                    <li>
+                        Check out the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html" target=blank>guides to mask</a> that CDC provided! 
+                        <br>
+                        <img id="myImg" src="https://image.freepik.com/free-vector/how-wearing-face-mask-right-wrong_23-2148682324.jpg" alt="Make sure to wear your mask the right way!" style="width:100%;max-width:300px" align="left">
+                        <br>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+        </li> 
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </ul>
+        <ul>
+            <li>
+                Stay 6 feet away from others 
+                <ul>
+                <li>
+                    How to properly do social distancing? 
+                </li>
+                <ul>
+                    <li>
+                        Check out the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html" target=blank>tips for social distancing</a> that CDC provided!
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Avoid crowds and poorly ventilated spaces
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Wash your hands often 
+                <ul>
+                <li>
+                    Check out the <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html" target=blank>right way to wash your hands</a> that CDC provided!
+                </li>
+                </ul>
+            </li>
+        </ul>
+            
+        <ul>
+            <li>
+                Cover coughs and sneezes
+                <ul>
+                <li>
+                    Always cover your mouth and nose with a tissue when you cough or sneeze
+                    <br>
+                    Throw used tissues in the trash
+                    <br>
+                    Immediately wash your hands with soap and water or hand sanitizer containing 60% alcohol
+                    <br>
+                </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                Monitor your health daily 
+                <ul>
+                <li>
+                    Check out the <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target=blank>symptoms for COVID-19</a> that CDC provided!
+                </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                Get Vaccinated to protect against COVID-19
+                <ul>
+                <li>
+                    Check out the <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" target=blank>information about new vaccines</a> that CDC provided!
+                </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        For more Information, click on <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" target=blank>this link</a>!
+    
+    <br>
+    </div>
 </body>
 </html>
