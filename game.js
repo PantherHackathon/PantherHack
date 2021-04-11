@@ -125,9 +125,9 @@ const obstacles = {
     obstaclesList : [],
 
     dX: canvas.width,
-    dY: 1, 
-    dy : 2.5,
-    speed : 50,
+    dY: 1, // changed from 1
+    dy : 2.5, // changed from 2.5
+    speed : 40, 
     
     draw : function(){
 
@@ -153,7 +153,7 @@ const obstacles = {
         if(state.current !== state.game) return;
 
         // adds an element to the list each 68 frames
-        if(frames % 68 ==0 ) {
+        if(frames % 80 == 0) { // changed from 68
 
             // random number used to determine the position of the obstacle
             random = randomNumber(1,3); 
